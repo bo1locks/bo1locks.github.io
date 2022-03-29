@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>青城码</title>
+<style>body{margin:0;background-image:url(background.png);background-size:cover}img{width:100%}#main{padding-top:420px}#info div{position:absolute;left:28%;color:#868686;font-size:240%;font-weight:600;font-family:sans-serif}#name{top:30%}#id{top:35.7%}#time div{position:absolute;top:45.7%;color:#036ef0;font-size:280%;font-weight:400;font-family:sans-serif}#year{left:13.4%}#month{left:30.2%}#day{left:39.8%}#hour{left:51.8%}#minute{left:63.6%}#second{top:45.4%!important;left:76.1%;font-size:360%!important}</style>
+<script>window.onload=function(){var e=["赵","钱","孙","李","周","吴","郑","王","冯","陈","褚","卫","蒋","沈","韩","杨","朱","秦","尤","许","何","吕","施","张"];function n(e){return s="0"+e,s.substring(s.length-2)}document.getElementById("name").innerHTML=e[Math.floor(Math.random()*e.length)]+"**",document.getElementById("id").innerHTML="1501***********171",window.setInterval((function(){var e=new Date;document.getElementById("year").innerHTML=e.getFullYear(),document.getElementById("month").innerHTML=e.getMonth()+1,document.getElementById("day").innerHTML=n(e.getDate()),document.getElementById("hour").innerHTML=n(e.getHours()),document.getElementById("minute").innerHTML=n(e.getMinutes()),document.getElementById("second").innerHTML=n(e.getSeconds())}),1e3)};</script>
+</head>
+<body>
+<img src="header.png" />
+<img id="main" src="main.png" />
+<div id="info">
+<div id="name"></div>
+<div id="id"></div>
+</div>
+<div id="time">
+<div id="year"></div>
+<div id="month"></div>
+<div id="day"></div>
+<div id="hour"></div>
+<div id="minute"></div>
+<div id="second"></div>
+</div>
+</body>
+</html>
